@@ -1,0 +1,8 @@
+dearpygui>=1.11.0
+selenium>=4.17.2
+selenium-stealth>=1.0.6
+sqlmodel>=0.0.14
+pandas>=2.2.0
+numpy>=1.26.0
+python-dotenv>=1.0.0
+webdriver-manager>=4.0.1

@@ -1,0 +1,8 @@
+scapy
+networkx
+pandas
+numpy
+wxPython
+psutil
+cairosvg
+pywfp

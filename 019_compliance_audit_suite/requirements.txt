@@ -1,0 +1,8 @@
+customtkinter
+matplotlib
+pyyaml
+pandas
+psutil
+reportlab
+python-docx
+numpy

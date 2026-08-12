@@ -1,0 +1,122 @@
+#:import KivyLexer kivy.extras.highlight.KivyLexer
+#:import HotReloadViewer kivy.utils.get_color_from_hex
+
+<MainScreen>:
+    canvas.before:
+        Color:
+            rgba: HotReloadViewer("#050505")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+        
+        # Decorative line
+        Color:
+            rgba: [0, 1, 1, 0.1]
+        Line:
+            points: [0, 0, self.width, 0]
+            width: 2
+
+    MDBoxLayout:
+        orientation: 'horizontal'
+
+        # Sidebar (Glassmorphism inspired)
+        MDCard:
+            orientation: 'vertical'
+            size_hint_x: 0.3  # Increased width for better text fit
+            padding: ["15dp", "20dp", "15dp", "20dp"]
+            spacing: "15dp"
+            md_bg_color: [0.04, 0.04, 0.04, 0.9] 
+            radius: [0, 0, 0, 0]
+            elevation: 4
+            shadow_color: HotReloadViewer("#00F2FF")
+
+            MDLabel:
+                text: "INTEL HUB v2.0"
+                font_style: "H5"
+                theme_text_color: "Custom"
+                text_color: HotReloadViewer("#00F2FF")
+                halign: "center"
+                bold: True
+                size_hint_y: None
+                height: "50dp"
+
+            MDSeparator:
+                color: HotReloadViewer("#00F2FF")
+
+            MDTextField:
+                id: search_input
+                hint_text: "Target Username / POI"
+                mode: "rectangle"  # Changed from fill for better alignment
+                fill_color_normal: [0.1, 0.1, 0.1, 1]
+                text_color_normal: [1, 1, 1, 1]
+                hint_text_color_normal: HotReloadViewer("#00F2FF")
+                line_color_focus: HotReloadViewer("#FFB300")
+                size_hint_x: 0.9
+                pos_hint: {"center_x": 0.5}
+
+            MDFillRoundFlatButton:
+                text: "INITIATE SCAN"
+                md_bg_color: HotReloadViewer("#00F2FF")
+                text_color: [0, 0, 0, 1]
+                font_style: "Button"
+                size_hint_x: 1
+                on_release: app.start_investigation(search_input.text)
+
+            MDLabel:
+                text: "LIVE EVENT LOG"
+                font_style: "Caption"
+                theme_text_color: "Custom"
+                text_color: HotReloadViewer("#FFB300")
+                size_hint_y: None
+                height: "20dp"
+
+            ScrollView:
+                MDList:
+                    id: event_log
+
+            MDBoxLayout:
+                size_hint_y: None
+                height: "40dp"
+                spacing: "10dp"
+                
+                MDIconButton:
+                    icon: "file-export"
+                    theme_text_color: "Custom"
+                    text_color: HotReloadViewer("#00F2FF")
+                    on_release: app.export_results()
+
+                MDIconButton:
+                    icon: "database"
+                    theme_text_color: "Custom"
+                    text_color: HotReloadViewer("#00F2FF")
+
+                MDIconButton:
+                    icon: "cog"
+                    theme_text_color: "Custom"
+                    text_color: HotReloadViewer("#00F2FF")
+
+        # Main Canvas Area
+        MDBoxLayout:
+            orientation: 'vertical'
+            padding: "20dp"
+
+            MDLabel:
+                id: graph_title
+                text: "ENTITY RELATION MAPPING"
+                font_style: "H6"
+                theme_text_color: "Custom"
+                text_color: HotReloadViewer("#00F2FF")
+                size_hint_y: None
+                height: "40dp"
+                halign: "center"
+
+            # This is where the Graph will be injected
+            Widget:
+                id: graph_container
+                canvas.before:
+                    Color:
+                        rgba: [0, 0.95, 1, 0.05]
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [20]

@@ -1,0 +1,9 @@
+customtkinter
+stem
+pysocks
+requests[socks]
+sqlcipher3-binary
+plyer
+packaging
+pyinstaller
+Pillow

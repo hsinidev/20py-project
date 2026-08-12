@@ -1,0 +1,85 @@
+/* Strategic Minimalist Theme */
+/* Developed by HSINI MOHAMED */
+
+QMainWindow {
+    background-color: #121213;
+}
+
+QWidget {
+    background-color: #121213;
+    color: #E0E0E0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13px;
+}
+
+QGroupBox {
+    border: 1px solid #2C2C2E;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #D35400;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}
+
+QPushButton {
+    background-color: #D35400;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #E67E22;
+}
+
+QPushButton:pressed {
+    background-color: #A04000;
+}
+
+QLineEdit, QTextEdit {
+    background-color: #1A1A1B;
+    border: 1px solid #2C2C2E;
+    color: #E0E0E0;
+    padding: 5px;
+    selection-background-color: #D35400;
+}
+
+QListWidget {
+    background-color: #1A1A1B;
+    border: 1px solid #2C2C2E;
+    outline: none;
+}
+
+QListWidget::item {
+    padding: 10px;
+    border-bottom: 1px solid #232324;
+}
+
+QListWidget::item:selected {
+    background-color: #2C2C2E;
+    color: #D35400;
+    border-left: 3px solid #D35400;
+}
+
+QProgressBar {
+    border: 1px solid #2C2C2E;
+    border-radius: 2px;
+    text-align: center;
+    background-color: #1A1A1B;
+}
+
+QProgressBar::chunk {
+    background-color: #D35400;
+}
+
+QStatusBar {
+    background-color: #1A1A1B;
+    color: #777;
+}

@@ -1,0 +1,282 @@
+{
+    "id": 13,
+    "name": "Digital Footprint Intelligence Hub (Scalable Edition)",
+    "version": "2.0.0",
+    "developer": "HSINI MOHAMED",
+    "architecture": "Modular Asynchronous Service-Oriented (MASO)",
+    "ui_library": "Kivy + Kivy-Garden (Enhanced Graph Component) + KivyMD",
+    "gui_theme": {
+        "palette": "OSINT-Dark",
+        "primary": "#00F2FF",
+        "secondary": "#0A0A0B",
+        "accent": "#FFB300",
+        "visual_style": "High-fidelity Glassmorphism with CRT-Scanline Overlays"
+    },
+    "unique_tech_stack": [
+        "Aiohttp (Concurrent Networking)",
+        "NetworkX (Entity Relation Mapping)",
+        "SQLite3 (Investigation Persistence)",
+        "Sherlock-Logic API (Social Discovery)",
+        "Custom Dorking Scraper (Metadata Extraction)"
+    ],
+    "file_structure": [
+        "main.py (App Entry & Lifecycle)",
+        "engine/scanner.py (Async Sherlock implementation)",
+        "engine/dorker.py (Advanced Google Dorking Service)",
+        "ui/canvas_controller.py (Interactive Node Physics & Graph Logic)",
+        "ui/sidebar_manager.py (Input & Control UI)",
+        "ui/styles.kv (Theming & Cyber-Cyan Layouts)",
+        "utils/exporter.py (JSON/CSV/PDF Reporting)",
+        "data/schema.sql (Local Database for POI Persistence)"
+    ],
+    "full_prompt": "Build a production-grade, multi-file OSINT application: 'Digital Footprint Intelligence Hub'. \n\nCORE ARCHITECTURE:\n1. Engine Layer: Implement a high-concurrency scanner using aiohttp.ClientSession with a Semaphore (limit 50). Logic must replicate the Sherlock project across 400+ platforms. Integrate a Google Dorking module targeting filetypes (pdf, xlsx) and sensitive directory structures.\n2. UI/GUI Layer: Centerpiece is an interactive Garden.Graph node canvas. Use NetworkX for automatic layout calculation (Spring Layout). Primary nodes (POI) glow Cyber-Cyan; discovered account nodes pulse when found. Implement a sidebar with glassmorphism containing 'Global Search', 'Live Event Log', and 'Node Inspector'.\n3. Scalability Features: Use an Observer pattern to update the UI from background scanning threads. Ensure all network IO is non-blocking. Implement a 'Session Resume' feature via SQLite to save large-scale intelligence maps.\n4. UX/UI Aesthetics: Background: HEX #050505. Entity Links: Cyber-Cyan (#00F2FF) with Bezier curves. Metadata tooltips on node hover. Drag-and-drop capability to manually associate disparate accounts.\n5. Export Engine: One-click generation of intelligence dossiers in JSON, CSV, and formatted PDF reports. \n\nCREDIT: Developed by HSINI MOHAMED."
+}
+
+
+
+{
+    "id": 14,
+    "name": "Social Engineering Vulnerability Mapper (Enterprise Edition)",
+    "version": "2.1.0",
+    "developer": "HSINI MOHAMED",
+    "architecture": "Asynchronous Task-Queue Architecture (ATQA)",
+    "ui_library": "PySide6 (Qt) + QtWebEngine (for Dynamic JS Render) + QSS",
+    "gui_theme": {
+        "palette": "Corporate-Tactical",
+        "primary_bg": "#121213",
+        "surface": "#1A1A1B",
+        "accent": "#D35400",
+        "text_main": "#E0E0E0",
+        "visual_style": "Strategic Minimalist with flat-vector components and high-contrast alert states"
+    },
+    "unique_tech_stack": [
+        "Playwright (Headless Multi-Instance Scraping)",
+        "Spacy (NLP Entity Extraction & Sentiment)",
+        "HoloViews/Plotly (Interactive Heatmaps)",
+        "Pandas (Risk Correlation Engine)",
+        "JinJa2 (Enterprise HTML Report Templating)"
+    ],
+    "file_structure": [
+        "app.py (System Bootstrapper & Signal Routing)",
+        "scrapers/manager.py (Playwright Cluster Controller)",
+        "analysis/nlp_engine.py (Spacy-based PII Scrutiny)",
+        "analysis/risk_matrix.py (Vectorized Risk Scoring Logic)",
+        "ui/main_window.py (PySide6 Dashboard Layout)",
+        "ui/web_view.py (QtWebEngine Bridge for Heatmaps)",
+        "ui/assets/theme.qss (Global Strategic-Charcoal Styles)",
+        "exports/html_generator.py (Executive Report Builder)"
+    ],
+    "full_prompt": "Develop a production-ready 'Social Engineering Vulnerability Mapper'. \n\nCORE SYSTEM DESIGN:\n1. Intelligence Gathering Layer: Implement a headless scraper cluster using Playwright to extract data from professional networks (LinkedIn) and public repositories. Focus on organizational hierarchy mapping and PII (Personally Identifiable Information) discovery.\n2. Cognitive Analysis Layer: Integrate Spacy NLP to parse discovered bios, project descriptions, and posts. Detect 'Social Vulnerabilities' such as oversharing of internal tech stacks, physical location data, or project deadlines. Calculate a dynamic 'Risk Index' (0.0-1.0).\n3. Tactical UI/GUI: Build a PySide6 interface featuring a 'Live Risk Matrix'. Use QtWebEngine to embed interactive HoloViews heatmaps. The UI must utilize a 'Strategic Minimalist' theme (Charcoal #121213 background, Burnt Orange #D35400 accents). \n4. Scalability Logic: Utilize Python's multiprocessing for scraping tasks to bypass GIL bottlenecks. Implement an internal caching layer to minimize redundant network requests. \n5. Deliverables: The system must generate 'Executive Vulnerability Reports' in professional HTML/PDF format, highlighting high-exposure departments and providing automated privacy mitigation steps. \n\nCREDIT: Developed by HSINI MOHAMED."
+}
+{
+    "id": 15,
+    "name": "Endpoint Security Policy Auditor (Enterprise Edition)",
+    "version": "1.5.0",
+    "developer": "HSINI MOHAMED",
+    "architecture": "Asynchronous Observer Pattern with Plugin-based Policy Architecture",
+    "ui_library": "Flet (Python Flutter) + Custom Canvas Drawing",
+    "gui_theme": {
+        "palette": "Clinical-Blue",
+        "primary": "#0078D7",
+        "background": "#F0F4F8",
+        "surface": "#FFFFFF",
+        "danger": "#D32F2F",
+        "success": "#388E3C",
+        "visual_style": "High-fidelity Glassmorphism with Material Design 3 components and Lottie animations"
+    },
+    "unique_tech_stack": [
+        "Asyncio (Non-blocking Audit Execution)",
+        "Psutil (Process & Resource Monitoring)",
+        "WMI / Python-nmap (Network & Registry Scrutiny)",
+        "SQLite (Audit History Persistence)",
+        "Python-docx/ReportLab (Professional Audit PDF Generation)"
+    ],
+    "file_structure": [
+        "main.py (Flet App Lifecycle & Route Manager)",
+        "engine/scanner_core.py (Asynchronous Audit Controller)",
+        "engine/cis_benchmarks.py (Policy Definitions & Compliance Logic)",
+        "engine/adapters/windows_wmi.py (Native OS Interaction Layer)",
+        "ui/views/dashboard.py (Stateful Dashboard with Health Gauges)",
+        "ui/components/policy_check_list.py (Interactive Audit UI Components)",
+        "ui/styles/clinical_theme.py (Flet Control Customization)",
+        "utils/remediation_scripts.py (CLI Command Generation Engine)",
+        "utils/logger.py (Secure Encrypted Audit Logging)"
+    ],
+    "full_prompt": "Develop a production-grade 'Endpoint Security Policy Auditor'. \n\nCORE SYSTEM DESIGN:\n1. Policy Engine Layer: Build a modular audit system that cross-references local machine state against CIS (Center for Internet Security) benchmarks. Implement asynchronous check execution using asyncio to perform parallel scanning of ports (nmap), registry keys (WMI), and active services (psutil) without UI lag.\n2. UI/GUI Layer: Use Flet to create a 'Clinical Blue' dashboard. Feature high-fidelity, animated health gauges at the top that reflect the overall compliance percentage. The main view must be a reactive data-table or list where items transition from 'Auditing' (Pulse) to 'Pass' (Success Green) or 'Fail' (Danger Red).\n3. Remediation Logic: For every failed check, generate a context-aware remediation object. Implement a 'One-Click Remediate' feature that displays the specific CLI commands or PowerShell scripts required to bring the endpoint into compliance.\n4. Scalability & State: Implement a 'Profile' system where users can switch between different audit levels (e.g., Workstation vs. Server). Use a local SQLite backend to store historical audit data for trend analysis.\n5. Executive Deliverables: Generate high-impact security audit reports. Include machine identity metadata, timestamped compliance scores, and a detailed breakdown of unresolved vulnerabilities in PDF and JSON formats.\n\nCREDIT: Developed by HSINI MOHAMED."
+}
+{
+    "id": 16,
+    "name": "Zero-Trust Identity Verification Suite (Enterprise Edition)",
+    "version": "2.2.0",
+    "developer": "HSINI MOHAMED",
+    "architecture": "Asynchronous Event-Driven Micro-Engine (AEDM) with Hardware Abstraction Layer",
+    "ui_library": "PyQt6 + QPropertyAnimation + Custom Frameless Windowing",
+    "gui_theme": {
+        "palette": "Identity-Vault",
+        "primary": "#0A84FF",
+        "background": "#020B1A",
+        "surface": "rgba(10, 20, 40, 0.7)",
+        "accent": "#00F2FF",
+        "error": "#FF3B30",
+        "visual_style": "High-fidelity Glassmorphism with Cyber-Pulse animations and blurred backdrop filters"
+    },
+    "unique_tech_stack": [
+        "OpenCV/DeepFace (Neural Face Recognition)",
+        "PyOTP (RFC 6238 TOTP Implementation)",
+        "PyCryptodome (AES-256-GCM Credential Vaulting)",
+        "SQLite3 (Encrypted Audit Trail)",
+        "QSS (Qt Style Sheets for Global Skinning)"
+    ],
+    "file_structure": [
+        "main.py (Application Bootstrapper & State Machine)",
+        "core/biometrics.py (DeepFace Integration & Stream Processor)",
+        "core/mfa_service.py (TOTP & Multi-Factor Logic Gates)",
+        "core/crypto_vault.py (AES-256 Storage & Key Derivation)",
+        "ui/window_manager.py (Frameless UI & Draggable Interface)",
+        "ui/views/auth_view.py (Biometric Scan UI with Pulse Overlays)",
+        "ui/styles/vault_theme.qss (Midnight Blue Glassmorphism Styles)",
+        "utils/logger.py (Zero-Trust Event Logging & Compliance)"
+    ],
+    "full_prompt": "Develop a production-grade 'Zero-Trust Identity Verification Suite'. \n\nCORE SYSTEM DESIGN:\n1. Biometric Engine Layer: Implement a non-blocking facial recognition module using OpenCV and DeepFace. The engine must process camera frames in a separate QThread, detecting liveness and mapping face vectors against a local encrypted database with a similarity threshold of $T \ge 0.95$.\n2. Security & MFA Layer: Build a strict Zero-Trust logic gate. Authentication requires a 'Success-Trinity': (1) Face Match, (2) Valid PyOTP token, and (3) Hardware-bound key verification. All credentials must be stored using AES-256-GCM encryption via PyCryptodome.\n3. UI/GUI Layer: Create a PyQt6 'Identity Vault' dashboard. Use a frameless window design with a Midnight Blue (#020B1A) gradient background. The central feature must be a 'Pulse' scan animation—a glowing Cyber-Cyan ring that reacts to biometric detection states (Searching, Validating, Access Granted).\n4. UX & Interactivity: Implement glassmorphism using semi-transparent QFrame elements with Gaussian blur. Add haptic-style visual feedback where components slightly enlarge or glow upon interaction. Use QPropertyAnimation for smooth transitions between the 'Lock Screen' and 'Authorized Vault'.\n5. Audit & Compliance: Maintain a secure, immutable SQLite log of all access attempts. Each entry must include a timestamp, biometric confidence score, and specific failure reasons (e.g., 'MFA_TIMEOUT' or 'FACE_MISMATCH').\n\nCREDIT: Developed by HSINI MOHAMED."
+}
+
+{
+    "id": 17,
+    "name": "Encrypted Communication Tunnel Manager (Enterprise Edition)",
+    "version": "3.1.0",
+    "developer": "HSINI MOHAMED",
+    "architecture": "Decoupled Asynchronous Network Service with Kernel-Level Shielding",
+    "ui_library": "Dear PyGui (GPU-Accelerated) + Dynamic Plotting API",
+    "gui_theme": {
+        "palette": "Matrix-Industrial",
+        "primary": "#00FF41",
+        "background": "#0D0208",
+        "surface": "#1A1A1A",
+        "warning": "#FFB300",
+        "critical": "#FF0000",
+        "visual_style": "High-contrast Command-Line Interface (CLI) aesthetic with CRT scanline shaders and real-time GPU-rendered telemetry"
+    },
+    "unique_tech_stack": [
+        "Paramiko (High-Level SSHv2 Protocol)",
+        "Scapy/Netifaces (Packet Inspection & Interface Mapping)",
+        "Python-Iptables / WFP-API (Cross-Platform Firewall Control)",
+        "Asyncio-Proxy (Localized Encrypted Traffic Routing)",
+        "Cryptography.fernet (Internal Config Encryption)"
+    ],
+    "file_structure": [
+        "main.py (Application Lifecycle & GPU Initialization)",
+        "core/ssh_manager.py (Asynchronous Multi-Hop Tunneling Logic)",
+        "core/vpn_controller.py (OpenVPN/WireGuard Config Automator)",
+        "net/firewall_shield.py (Kill-Switch & Iptables Logic)",
+        "net/traffic_analyzer.py (Real-time Byte-Stream Telemetry)",
+        "ui/dashboard.py (Main Control Interface & Matrix Theming)",
+        "ui/charts.py (High-Performance GPU Traffic Plotting)",
+        "utils/elevation.py (UAC/Sudo Privilege Escalation Handler)"
+    ],
+    "full_prompt": "Develop a production-grade 'Encrypted Communication Tunnel Manager'. \n\nCORE SYSTEM DESIGN:\n1. Tunneling Engine Layer: Implement a robust SSHv2 tunneling module using Paramiko. Support dynamic port forwarding (-D), local forwarding (-L), and remote forwarding (-R). The engine must handle connection persistence with auto-reconnect logic and heartbeats to ensure tunnel stability over high-latency networks.\n2. Network Security Layer: Build a 'Kernel-Level Kill-Switch'. Upon tunnel degradation or failure, the system must immediately inject blocking rules into iptables (Linux) or the Windows Filtering Platform (WFP) to prevent IP leaks. Integrate a localized proxy server that forces specific application traffic through the encrypted path.\n3. UI/GUI Layer: Use Dear PyGui to create a 'Matrix Green' industrial dashboard. The top half must feature a high-performance, real-time 'Tunnel Traffic' line graph showing Inbound/Outbound throughput. Use a monospaced font aesthetic and implement a CRT-scanline shader overlay for a terminal-inspired look.\n4. UX & Interactivity: Create a 'World-Node Explorer' using a country-flag selector. Implement a one-click 'Stealth Mode' that reconfigures the tunnel to use obfuscated bridges (e.g., Obfs4 style) to bypass Deep Packet Inspection (DPI).\n5. Audit & Telemetry: Maintain an encrypted log of session durations, data transferred, and security events. Display a live 'Security Pulse' indicator that turns from Matrix Green to Critical Red if an unencrypted leak is detected.\n\nCREDIT: Developed by HSINI MOHAMED."
+}
+{
+    "id": 18,
+    "name": "Malware Sandbox Behavior Visualizer (Enterprise Edition)",
+    "version": "1.8.0",
+    "developer": "HSINI MOHAMED",
+    "architecture": "Event-Stream Forensic Architecture with 3D Spatial Mapping",
+    "ui_library": "PyVista (VTK-based 3D Rendering) + PyQt6 (Control Overlay)",
+    "gui_theme": {
+        "palette": "Defensive-Gold",
+        "primary": "#D4AF37",
+        "background": "#0F1112",
+        "surface": "#1E2124",
+        "risk_high": "#FF4B2B",
+        "risk_low": "#00C851",
+        "visual_style": "Tactical Gold accents on Dark Slate with volumetric 3D process trees and interactive point-cloud telemetry"
+    },
+    "unique_tech_stack": [
+        "PyVista / VTK (3D Spatial Analysis)",
+        "Cuckoo-API / Libvirt (Sandbox Virtualization)",
+        "WinAppDbg / Capstone (Instruction Tracing)",
+        "YARA (Malware Pattern Matching)",
+        "Polars (High-Speed Behavioral Log Processing)"
+    ],
+    "file_structure": [
+        "main.py (App Bootstrapper & Environment Safety Check)",
+        "engine/sandbox_manager.py (VM Lifecycle & Cuckoo Integration)",
+        "engine/monitor_hooks.py (Instruction-Level Execution Tracing)",
+        "analysis/risk_engine.py (Heuristic Scoring & MITRE Mapping)",
+        "ui/spatial_view.py (3D Behavioral Tree Rendering)",
+        "ui/forensic_timeline.py (Interactive Event Log with Playback)",
+        "utils/snapshots.py (Pre/Post-Run Registry & Disk Diffing)",
+        "utils/isolation_gate.py (Anti-VM & Safety Guard Logic)"
+    ],
+    "full_prompt": "Develop a production-grade 'Malware Sandbox Behavior Visualizer'. \n\nCORE SYSTEM DESIGN:\n1. Isolation & Sandbox Layer: Build a controller for Cuckoo Sandbox or localized Libvirt VMs. Implement an 'Environment Safety Gate' that refuses execution unless a hardened virtualized environment is detected. Support automated pre-run and post-run system snapshotting for deep diff analysis of registry and filesystem changes.\n2. 3D Behavioral Mapping: Use PyVista to create a volumetric 3D representation of malware behavior. Render the process tree as a growth model where node size represents resource consumption and color represents risk (Defensive Gold to Critical Crimson). Use spatial links to show network pings and inter-process communication.\n3. Forensic Analysis Engine: Integrate WinAppDbg and Capstone for real-time instruction tracing. Implement a 'Heuristic Scoring' module that flags behaviors like 'Anti-Debugger Detection', 'Process Hollowing', or 'Registry Persistence' based on MITRE ATT&CK matrices.\n4. UI/GUI Layer: Design a 'Defensive Gold' command center. The central viewport must feature the interactive 3D behavior web. Surround this with side-by-side forensic panels for File I/O, Network Hex-dumps, and API call logs. Implement a 'Time-Travel' slider to replay the malware execution frame-by-frame.\n5. Safety & Compliance: Maintain an immutable audit trail of the analysis session. Include a 'Kill-Switch' to instantly terminate the VM if suspicious lateral movement is detected on the virtual network. Metadata: 'Developed by HSINI MOHAMED'."
+}{
+    "id": 19,
+    "name": "Automated Compliance Audit Suite (Enterprise GRC Edition)",
+    "version": "2.5.0",
+    "developer": "HSINI MOHAMED",
+    "architecture": "Modular Control-Validation Architecture (MCVA) with Plugin Framework",
+    "ui_library": "CustomTkinter (High-Fidelity Modern Tkinter) + Matplotlib (Compliance Gauges)",
+    "gui_theme": {
+        "palette": "Sage-Executive",
+        "primary": "#87A96B",
+        "background": "#1A1C1E",
+        "surface": "#2D3135",
+        "text": "#E1E2E5",
+        "accent": "#D4AF37",
+        "visual_style": "Sophisticated Sage Green accents on Deep Charcoal with rounded glassmorphism containers and animated progress steppers"
+    },
+    "unique_tech_stack": [
+        "CustomTkinter (Modern UI Widgets)",
+        "Python-Docx / ReportLab (Professional PDF/Docx Templating)",
+        "PyYAML (Framework Definition Mapping)",
+        "Pandas (Audit Result Tabulation)",
+        "SQLite3 (Historical Audit Persistence)"
+    ],
+    "file_structure": [
+        "main.py (Application Bootstrapper & Global State)",
+        "engine/framework_manager.py (ISO/SOC2 Control Loader)",
+        "engine/system_auditor.py (Active Log & Config Parser)",
+        "analysis/gap_analyzer.py (Remediation & Score Logic)",
+        "ui/dashboard_view.py (Main GRC Control Center)",
+        "ui/progress_stepper.py (10-Step Interactive Audit Guide)",
+        "ui/charts_integration.py (Matplotlib Gauge Components)",
+        "reports/generator.py (Executive PDF/Docx Engine)",
+        "data/frameworks/iso27001.yaml (Standard Control Definitions)"
+    ],
+    "full_prompt": "Develop a production-grade 'Automated Compliance Audit Suite'. \n\nCORE SYSTEM DESIGN:\n1. Modular Engine Layer: Build a 'Framework Loader' that reads compliance controls from YAML files. Implement an asynchronous scanner that parses local server configurations, security group settings, and log files to verify technical control implementation against ISO 27001 and SOC2 standards.\n2. UI/GUI Layer: Design an 'Executive Sage' dashboard using CustomTkinter. The layout must feature a high-fidelity 10-step progress stepper at the top. Use Matplotlib to render a semi-circular compliance gauge that updates in real-time as the audit progresses. Implement a 'Gap Analysis' table with filtered views for 'Passed', 'Failed', and 'Manual Review Required'.\n3. Audit & Evidence Logic: Create a secure document-upload zone using drag-and-drop. Implement logic to associate uploaded policy documents with specific compliance controls. Use a scoring algorithm that weights controls based on their criticality to the overall certification.\n4. Executive Reporting Engine: Integrate ReportLab and Python-Docx to generate high-impact, professional audit reports. Reports must include a summary dashboard, detailed control-by-control breakdown, machine-identity metadata, and an automated remediation roadmap for 'Gap' areas.\n5. State & Scalability: Ensure all audit sessions are saved to a local SQLite database, allowing users to pause an audit and resume later. Metadata: 'Developed by HSINI MOHAMED'."
+}{
+    "id": 20,
+    "name": "Network Lateral Movement Detector (Enterprise NDR Edition)",
+    "version": "3.2.0",
+    "developer": "HSINI MOHAMED",
+    "architecture": "Asynchronous Packet-Pipeline Architecture (APPA) with Graph-based Heuristics",
+    "ui_library": "WxPython (Advanced Generic Widgets) + CairoSVG Rendering",
+    "gui_theme": {
+        "palette": "Network-Command",
+        "primary": "#6F00FF",
+        "background": "#0B0C10",
+        "surface": "#1F2833",
+        "text": "#C5C6C7",
+        "accent": "#45A29E",
+        "visual_style": "Electric Indigo neon accents on deep obsidian background with high-contrast vector-based network topology mapping"
+    },
+    "unique_tech_stack": [
+        "Scapy / Npcap (High-Fidelity Packet Crafting & Sniffing)",
+        "NetworkX (Dynamic Graph Topology Analysis)",
+        "Pandas / NumPy (Traffic Flow Vectorization)",
+        "Asyncio / Threading (Parallel Packet Processing)",
+        "PyWFP / Iptables-Python (Automated Firewall Orchestration)"
+    ],
+    "file_structure": [
+        "main.py (App Initialization & Kernel Permissions Check)",
+        "core/sniffer_engine.py (Async Packet Capture & Protocol Parsing)",
+        "core/behavioral_analyzer.py (Lateral Movement Heuristics & MITRE Mapping)",
+        "net/topology_manager.py (NetworkX-based Asset Mapping)",
+        "net/defense_orchestrator.py (Firewall Rule Generation & Injection)",
+        "ui/command_center.py (Main WxPython Frame & Layout)",
+        "ui/svg_canvas.py (Dynamic SVG Network Map Renderer)",
+        "ui/traffic_replay.py (Pcap-based Incident Playback)",
+        "utils/logger.py (Encrypted Forensic Audit Trail)"
+    ],
+    "full_prompt": "Develop a production-grade 'Network Lateral Movement Detector'. \n\nCORE SYSTEM DESIGN:\n1. High-Performance Sniffer Layer: Implement an asynchronous packet capture engine using Scapy. Utilize a producer-consumer pattern to sniff traffic across multiple interfaces without packet loss. Focus on identifying ARP spoofing, RDP/SSH brute forcing, and unusual SMB/RPC directory traversals indicative of lateral movement.\n2. Graph-Based Analysis Engine: Integrate NetworkX to build a real-time 'Probability Map' of network connections. Use Pandas to analyze traffic spikes and flow directions. Implement a heuristic scoring system that flags connections between non-adjacent network zones (e.g., Guest WiFi to Domain Controller).\n3. UI/GUI Layer: Design a 'Network Command' dashboard using WxPython. The centerpiece must be a live-updating SVG network map rendered via CairoSVG. Nodes representing devices must pulse with 'Electric Indigo' glows. If a node is flagged as suspicious, it must transition to 'Critical Crimson' with an animated perimeter pulse.\n4. Forensic & Defense Logic: Implement a 'Traffic Replay' module that allows analysts to load historical PCAP files and watch the lateral movement progress frame-by-frame on the graph. Build an automated 'Firewall Orchestrator' that generates and applies temporary blocking rules (WFP on Windows, Iptables on Linux) to isolate compromised assets.\n5. Executive Visibility: Create a live 'Threat Feed' panel showing real-time alerts with detailed metadata (Source/Dest IP, Protocol, MAC Address, and Confidence Score). Ensure the session state is persistent via a local database. Metadata: 'Developed by HSINI MOHAMED'."
+}

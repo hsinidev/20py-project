@@ -1,0 +1,7 @@
+pandas
+xlsxwriter
+tksheet
+plotly
+markdown-it-py
+requests
+beautifulsoup4

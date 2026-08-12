@@ -1,0 +1,9 @@
+PyQt6
+Flask
+Jinja2
+PyJWT
+matplotlib
+fpdf2
+cryptography
+requests
+pandas

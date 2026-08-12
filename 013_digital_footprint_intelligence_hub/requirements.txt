@@ -1,0 +1,5 @@
+kivy
+kivymd
+aiohttp
+beautifulsoup4
+networkx

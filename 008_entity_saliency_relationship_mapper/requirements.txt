@@ -1,0 +1,6 @@
+pyvista
+networkx
+matplotlib
+nltk
+scipy
+pyqt5

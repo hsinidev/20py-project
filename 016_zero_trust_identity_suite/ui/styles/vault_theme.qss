@@ -1,0 +1,65 @@
+/* Zero-Trust Identity Vault QSS */
+
+QWidget {
+    background: transparent;
+    color: #E0E0E0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#MainFrame {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 #020B1A, stop:1 #0A192F);
+    border: 1px solid #0A84FF;
+    border-radius: 20px;
+}
+
+#GlassContainer {
+    background-color: rgba(10, 20, 40, 0.6);
+    border: 1px solid rgba(0, 242, 255, 0.3);
+    border-radius: 15px;
+}
+
+QLabel#TitleLabel {
+    color: #00F2FF;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+QLineEdit {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(10, 132, 255, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #00F2FF;
+}
+
+QPushButton#AuthButton {
+    background-color: #0A84FF;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+QPushButton#AuthButton:hover {
+    background-color: #00F2FF;
+    color: #020B1A;
+}
+
+#ScanRing {
+    border: 3px solid #00F2FF;
+    border-radius: 100px;
+}
+
+#StatusLabel {
+    color: #888888;
+    font-size: 12px;
+}
